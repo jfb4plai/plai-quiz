@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+@theme inline {
+  --color-jfb-noir:      #1a1a1a;
+  --color-jfb-noir-doux: #2e2e2e;
+  --color-jfb-rose:      #FF3399;
+  --color-jfb-rose-dk:   #CC0070;
+  --color-jfb-beige:     #F5F0E8;
+  --color-jfb-beige-dk:  #E8E0D0;
+  --color-jfb-gris:      #5a5a5a;
+  --color-jfb-gris-cl:   #909090;
+  --color-jfb-bordure:   #e8e8e8;
+  --color-jfb-subtil:    #f9f9f7;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
