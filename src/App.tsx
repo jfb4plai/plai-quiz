@@ -2,6 +2,7 @@ import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import ProtectedRoute from './components/ProtectedRoute';
 import Login from './pages/Login';
+import ResetPassword from './pages/ResetPassword';
 import QuizList from './pages/quiz/QuizList';
 import QuizEditor from './pages/quiz/QuizEditor';
 import QuizSession from './pages/quiz/QuizSession';
@@ -67,6 +68,7 @@ function AppShell() {
       <div className="flex-1">
         <Routes>
           <Route path="/login" element={<Login />} />
+          <Route path="/reset-password" element={<ResetPassword />} />
           <Route path="/" element={<ProtectedRoute><QuizList /></ProtectedRoute>} />
           <Route path="/new" element={<ProtectedRoute><QuizEditor /></ProtectedRoute>} />
           <Route path="/:id/edit" element={<ProtectedRoute><QuizEditor /></ProtectedRoute>} />
